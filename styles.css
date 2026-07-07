@@ -488,8 +488,8 @@ a.resource-item.is-visible, .resource-item.is-visible, .quote.is-visible, .tip-b
   .hero__subtitle { font-size: 18px; }
   .hero__text { padding: 60px 16px 40px; }
   .hero__badge { font-size: 13px; padding: 3px 12px; margin-bottom: 16px; }
-  .hero__btns { flex-direction: column; gap: 10px; }
-  .hero__btns .btn-primary, .hero__btns .btn-outline { width: 100%; max-width: 280px; }
+  .hero__btns { flex-direction: column; align-items: center; gap: 12px; }
+  .hero__btns .btn-primary, .hero__btns .btn-outline { width: 100%; max-width: 240px; }
   .section { padding: 60px 20px; }
   .section__title { font-size: 28px; }
   .section__desc { font-size: 18px; }
@@ -506,8 +506,8 @@ a.resource-item.is-visible, .resource-item.is-visible, .quote.is-visible, .tip-b
   .banner { padding: 60px 20px; }
   .banner__title { font-size: 28px; }
   .banner__desc { font-size: 17px; }
-  .banner__btns { flex-direction: column; gap: 12px; }
-  .banner__btns .btn-primary { width: 100%; max-width: 280px; }
+  .banner__btns { flex-direction: column; align-items: center; gap: 12px; }
+  .banner__btns .btn-primary, .banner__btns .btn-outline { width: 100%; max-width: 240px; }
   .concept-card { padding: 20px; }
   .concept-card__title { font-size: 17px; margin-bottom: 8px; }
   .concept-card__body { font-size: 15px; line-height: 1.6; }
@@ -565,6 +565,8 @@ a.resource-item.is-visible, .resource-item.is-visible, .quote.is-visible, .tip-b
   .share-option { padding: 12px; gap: 10px; }
   .share-option__icon { width: 36px; height: 36px; }
   .share-option__label { font-size: 14px; }
+  .hero__btns .btn-primary, .hero__btns .btn-outline { max-width: 200px; }
+  .banner__btns .btn-primary, .banner__btns .btn-outline { max-width: 200px; }
   .btn-primary, .btn-outline { min-height: 36px; font-size: 14px; padding: 7px 14px; }
 }
 
