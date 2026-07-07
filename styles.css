@@ -78,7 +78,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 
 .nav__inner {
   max-width: var(--content-max); margin: 0 auto;
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex; align-items: center; justify-content: center;
   height: 100%; padding: 0 24px;
 }
 
@@ -444,35 +444,152 @@ a.resource-item.is-visible, .resource-item.is-visible, .quote.is-visible, .tip-b
 @media (max-width: 1068px) {
   .hero__title { font-size: 44px; }
   .section__title { font-size: 40px; }
+  .hero { min-height: 520px; }
+  .hero__text { padding: 80px 24px 60px; }
 }
 
 @media (max-width: 833px) {
   .nav__links { display: none; }
   .nav__hamburger { display: flex; }
+  .nav__inner { padding: 0 12px; }
+  .nav__hamburger { width: 40px; height: 40px; padding: 0 8px; }
   .two-col-grid { grid-template-columns: 1fr; }
   .hero__title { font-size: 38px; }
   .hero__subtitle { font-size: 20px; }
+  .hero__text { padding: 70px 20px 50px; }
   .section__title { font-size: 34px; }
+  .section { padding: 72px 20px; }
+  .section__desc { font-size: 19px; margin-bottom: 36px; }
   .footer__grid { grid-template-columns: 1fr; gap: 24px; }
+  .footer { padding: 48px 20px 24px; }
+  .footer__legal { margin-bottom: 32px; }
+  .mobile-menu__list a { font-size: 24px; padding: 14px 0; }
+  .concept-card { padding: 24px; }
+  .quote { padding: 24px; margin: 32px 0 0; font-size: 16px; }
+  .tip-box { padding: 24px; }
+  .tip-box__title { font-size: 18px; }
+  .tip-box p { font-size: 15px; line-height: 1.6; }
+  .step-card { padding: 24px; }
+  .step-card__num { font-size: 22px; margin-bottom: 10px; }
+  .step-card__title { font-size: 18px; }
+  .step-card__body { font-size: 15px; }
+  .btn-primary, .btn-outline { min-height: 40px; font-size: 16px; padding: 9px 18px; }
+  .hero__btns { gap: 12px; }
+  .info-card { padding: 24px; }
+  .info-card__num { font-size: 28px; margin-bottom: 8px; }
+  .info-card__title { font-size: 19px; }
+  .info-card__body { font-size: 15px; }
+  .section__label { font-size: 13px; padding: 3px 12px; margin-bottom: 14px; }
 }
 
 @media (max-width: 640px) {
   .hero { min-height: 500px; }
   .hero__title { font-size: 32px; }
   .hero__subtitle { font-size: 18px; }
+  .hero__text { padding: 60px 16px 40px; }
+  .hero__badge { font-size: 13px; padding: 3px 12px; margin-bottom: 16px; }
+  .hero__btns { flex-direction: column; gap: 10px; }
+  .hero__btns .btn-primary, .hero__btns .btn-outline { width: 100%; max-width: 280px; }
   .section { padding: 60px 20px; }
   .section__title { font-size: 28px; }
   .section__desc { font-size: 18px; }
+  .section__desc { margin-bottom: 28px; }
   .info-card { padding: 24px; }
+  .info-card__num { font-size: 26px; }
+  .info-card__title { font-size: 18px; }
+  .info-card__body { font-size: 15px; line-height: 1.6; }
   a.resource-item, .resource-item { flex-direction: column; align-items: flex-start; }
   .resource-item__tag { align-self: flex-start; }
+  .resource-item { padding: 18px; }
+  .resource-item__title { font-size: 16px; }
+  .resource-item__desc { font-size: 14px; }
   .banner { padding: 60px 20px; }
   .banner__title { font-size: 28px; }
   .banner__desc { font-size: 17px; }
+  .banner__btns { flex-direction: column; gap: 12px; }
+  .banner__btns .btn-primary { width: 100%; max-width: 280px; }
+  .concept-card { padding: 20px; }
+  .concept-card__title { font-size: 17px; margin-bottom: 8px; }
+  .concept-card__body { font-size: 15px; line-height: 1.6; }
+  .quote { padding: 20px; font-size: 15px; line-height: 1.6; margin: 24px 0 0; }
+  .quote cite { font-size: 13px; margin-top: 12px; }
+  .step-card { padding: 20px; }
+  .step-card__num { font-size: 20px; margin-bottom: 8px; }
+  .step-card__body { font-size: 14px; line-height: 1.6; }
+  .tip-box { padding: 20px; }
+  .tip-box__title { font-size: 17px; margin-bottom: 10px; }
+  .tip-box p { font-size: 14px; line-height: 1.6; }
+  .footer { padding: 40px 16px 20px; }
+  .footer__legal { font-size: 12px; margin-bottom: 28px; line-height: 1.5; }
+  .footer__col h4 { font-size: 13px; margin-bottom: 12px; }
+  .footer__col a { font-size: 14px; padding: 6px 0; }
+  .footer__bottom { padding-top: 20px; margin-top: 24px; }
+  .footer__bottom p { font-size: 12px; }
+  .section__label { font-size: 12px; padding: 3px 10px; margin-bottom: 12px; }
+  .mobile-menu__list a { font-size: 22px; padding: 12px 0; }
+  .mobile-menu__inner { padding-left: 16px; padding-right: 16px; }
+  .btn-primary, .btn-outline { min-height: 38px; font-size: 15px; padding: 8px 16px; }
+  .share-modal__box { padding: 24px; width: 92%; }
+  .share-option { padding: 14px; gap: 12px; }
+  .share-option__icon { width: 40px; height: 40px; }
+  .share-option__label { font-size: 15px; }
+  .share-option__hint { font-size: 11px; }
 }
 
 @media (max-width: 419px) {
   .hero__title { font-size: 28px; }
+  .hero__subtitle { font-size: 16px; }
+  .hero__text { padding: 50px 14px 36px; }
+  .hero__badge { font-size: 12px; padding: 2px 10px; }
+  .section { padding: 48px 14px; }
+  .section__title { font-size: 24px; margin-bottom: 10px; }
+  .section__desc { font-size: 16px; margin-bottom: 24px; }
+  .section__label { font-size: 11px; padding: 2px 10px; margin-bottom: 10px; }
+  .info-card { padding: 18px; }
+  .info-card__num { font-size: 24px; }
+  .info-card__title { font-size: 16px; }
+  .info-card__body { font-size: 14px; }
+  .concept-card { padding: 16px; }
+  .concept-card__title { font-size: 16px; }
+  .concept-card__body { font-size: 14px; }
+  .step-card { padding: 16px; }
+  .tip-box { padding: 16px; }
+  .banner { padding: 48px 14px; }
+  .banner__title { font-size: 24px; }
+  .banner__desc { font-size: 15px; }
+  .footer { padding: 32px 14px 16px; }
+  .footer__col a { font-size: 13px; padding: 5px 0; }
+  .mobile-menu__list a { font-size: 20px; padding: 10px 0; }
+  .mobile-menu__inner { padding-top: calc(var(--nav-height) + 20px); }
+  .share-modal__box { padding: 20px; }
+  .share-option { padding: 12px; gap: 10px; }
+  .share-option__icon { width: 36px; height: 36px; }
+  .share-option__label { font-size: 14px; }
+  .btn-primary, .btn-outline { min-height: 36px; font-size: 14px; padding: 7px 14px; }
+}
+
+/* --- Extra small screens --- */
+@media (max-width: 374px) {
+  .hero__title { font-size: 24px; }
+  .hero__subtitle { font-size: 15px; }
+  .section__title { font-size: 22px; }
+  .section__desc { font-size: 15px; }
+  .info-card { padding: 14px; }
+  .info-card__num { font-size: 22px; margin-bottom: 6px; }
+  .info-card__title { font-size: 15px; }
+  .info-card__body { font-size: 13px; }
+  .concept-card { padding: 14px; }
+  .concept-card__body { font-size: 13px; }
+  .step-card { padding: 14px; }
+  .step-card__num { font-size: 18px; }
+  .step-card__body { font-size: 13px; }
+  .tip-box { padding: 14px; }
+  .banner { padding: 40px 12px; }
+  .banner__title { font-size: 22px; }
+  .banner__desc { font-size: 14px; }
+  .footer { padding: 28px 12px 14px; }
+  .mobile-menu__list a { font-size: 18px; padding: 8px 0; }
+  .share-modal__box { padding: 16px; border-radius: 16px; }
 }
 
 
